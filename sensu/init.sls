@@ -4,7 +4,7 @@
 sensu-extra-packages:
   pkg.installed:
     - names:
-      - python-apt
+      - python3-apt
       {% if repos.get('enabled') and repos.get('name').startswith("https") %}
       - apt-transport-https
       {% endif %}
